@@ -1,0 +1,117 @@
+/* Ensure full height layout */
+html,
+#root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+.ant-color-picker-color-block {
+  border: 1px solid #666666;
+}
+
+
+/* App layout container */
+.app-layout {
+  background-color: #000000;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Sticky header styling */
+.app-header {
+  z-index: 1000;
+  background-color: #000;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.app-header ul {
+  background-color: #000;
+}
+
+/* Selected menu item (Ant Design) */
+.ant-menu-item-selected {
+  background-color: #000 !important;
+  font-weight: bold;
+}
+
+/* Logo container styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.logo {
+  height: 32px;
+  margin-right: 8px;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Main content area */
+.app-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+/* Sticky footer styling */
+.app-footer {
+  width: 100%;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+}
+
+/* Demo logo placeholder */
+.demo-logo {
+  background: #000;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+}
+
+/* Custom scrollbar for WebKit */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #111;
+  border: 3px solid #1e1e1e;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #111;
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #111 #111;
+}
+

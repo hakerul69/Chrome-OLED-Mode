@@ -1,0 +1,11 @@
+{
+    "name": {
+        "message": "Super OLED Mode"
+    },
+    "short_name": {
+        "message": "OLED Mode"
+    },
+    "description": {
+        "message": "Switch all websites to OLED mode. You can darken all sites and also customize colors for the sites you want."
+    }
+}

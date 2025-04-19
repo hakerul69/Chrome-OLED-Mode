@@ -1,0 +1,62 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome OLED Mode",
+  "version": "1.0.0",
+  "description": "A customizable OLED theme for all websites.",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "64": "icon64.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "static/background/index.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "scripting",
+    "contextMenus",
+    "webRequest",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/on.png", "assets/off.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "commands": {
+    "add-remove-whitelist": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E"
+      },
+      "description": "Toggle current site whitelist for dark mode."
+    }
+  },
+  "default_locale": "en"
+}
