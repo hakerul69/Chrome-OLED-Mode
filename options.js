@@ -78721,8 +78721,8 @@ var e, t;
             o.export(r, "themeStates", () => l),
             o.export(r, "themeHostname", () => i),
             o.export(r, "themeName", () => s);
-          let n = "https://sdmextension.com/uninstall/",
-            a = "https://sdmextension.com/install/",
+          let n = "",
+            a = "",
             l = {
               plusau: !0,
               aljazeera: !0,
