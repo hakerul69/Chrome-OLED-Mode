@@ -31,8 +31,6 @@
     "alarms",
     "scripting",
     "contextMenus",
-    "webRequest",
-    "declarativeNetRequest"
   ],
   "host_permissions": [
     "<all_urls>"
