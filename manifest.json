@@ -31,6 +31,8 @@
     "alarms",
     "scripting",
     "contextMenus",
+    "webRequest",
+    "declarativeNetRequest"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -56,5 +58,5 @@
       "description": "Toggle current site whitelist for dark mode."
     }
   },
-  "default_locale": "en"
+  "default_locale": "in"
 }
