@@ -4,7 +4,9 @@
 ![Chrome-OLED-Mode Logo](demo1.png)
 ![Chrome-OLED-Mode Logo](demo2.png)
 
-DISCLAIMER: This is a resurrection of the Super Dark Mode 6.1.2 .crx obtained August 2024(now got taken down from the Chrome Web Store for purported ad injection reasons after it it's developer got compromised in December 2024: https://gitlab-com.gitlab.io/gl-security/security-tech-notes/threat-intelligence-tech-notes/malicious-browser-extensions-feb-2025/) All references to the original developer's domain has been removed from the code and no traces of the malicious code patterns described in the article are present to my current knowledge but further inspection may be needed. In my opinion, this functions way better than the popular extension 'Dark Reader'. This extension will be actively maintained, cleaned up, documented, and stylesheet corrections made to popular sites when they break.
+DISCLAIMER: This is a resurrection of the Super Dark Mode 6.1.2 .crx obtained August 2024(now got taken down from the Chrome Web Store for purported ad injection reasons after it it's developer got compromised in December 2024: https://gitlab-com.gitlab.io/gl-security/security-tech-notes/threat-intelligence-tech-notes/malicious-browser-extensions-feb-2025/) All references to the original developer's domain has been removed from the code and no traces of the malicious code patterns described in the article exist. There should be no possibility of the extension making any external network calls.
+
+ In my opinion, this works a lot better than the popular extension 'Dark Reader'. The extension will be actively maintained, cleaned up, documented, and stylesheet corrections made to popular sites when they break. Stay tuned for updates!
 
 
 # Implementation Details
